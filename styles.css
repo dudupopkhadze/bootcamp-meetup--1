@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #1732b9;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer {
+  background: #1732b9;
+  padding: 1rem;
+  text-align: center;
+}
+
+.title {
+  color: white;
+  font-size: 30px;
+}
+
+.container {
+  margin: auto;
+  overflow: auto;
+  padding: 3rem 2rem;
+}
+
+#my-form {
+  padding: 2rem;
+  background: #c8c8c8;
+  border-radius: 10px;
+}
+
+#my-form h1 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+#my-form label {
+  display: block;
+}
+
+#my-form input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.inputsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputContainer {
+  width: 300px;
+}
+
+.btn {
+  display: block;
+  width: 100px;
+  padding: 10px 15px;
+  border: 0;
+  background-color: rgba(16, 12, 247, 0.941);
+  color: #fff;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.error {
+  background: orangered;
+  color: #fff;
+  padding: 5px;
+  margin: 5px;
+}
+
+.users {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.userContainer {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: rgb(31, 185, 241);
+}
+
+.starred {
+  background-color: rgb(224, 239, 14);
+}
+
+.userContainer > h1,
+h4 {
+  text-align: center;
+}
+
+.userImage {
+  margin-top: 10px;
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.delete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  width: 50px;
+  border: 0;
+  background-color: rgba(16, 12, 247, 0.941);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.star {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 4px;
+  width: 50px;
+  border: 0;
+  background-color: rgba(40, 232, 97, 0.941);
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Responsive Stuff */
+
+@media screen and (max-width: 1300px) {
+  .users {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .inputsWrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .title {
+    font-size: 25px;
+  }
+
+  .users {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .userContainer {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .inputContainer {
+    width: 250px;
+  }
+
+  .userImage {
+    width: 250px;
+    height: 250px;
+  }
+}
